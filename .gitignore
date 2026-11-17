@@ -1,0 +1,40 @@
+# Environment & local configuration
+.env
+.env.*
+!.env.example
+
+# Credential stores, master keys, and OAuth secrets
+credentials/
+secrets/
+*.key
+*.dpapi
+*.enc
+*.pem
+*.p12
+*.token
+*token*.json
+*secret*.json
+client_secret*.json
+oauth-*.json
+
+# Databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+data/
+
+# Temporary media, analysis frames, uploads & logs
+temp/
+tmp/
+uploads/
+logs/
+*.log
+
+# Dependencies and build outputs
+node_modules/
+dashboard/node_modules/
+dashboard/dist/
+coverage/
+

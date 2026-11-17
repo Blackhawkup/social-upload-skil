@@ -1,0 +1,52 @@
+{
+  "name": "social-media-publisher",
+  "version": "1.0.0",
+  "description": "Secure local AI Social Media Publisher backend, MCP server, and dashboard for YouTube and Instagram",
+  "author": "Blackhawkup",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Blackhawkup/social-upload-skil.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Blackhawkup/social-upload-skil/issues"
+  },
+  "homepage": "https://github.com/Blackhawkup/social-upload-skil#readme",
+  "keywords": [
+    "antigravity",
+    "antigravity-skill",
+    "mcp-server",
+    "model-context-protocol",
+    "youtube-data-api",
+    "instagram-graph-api",
+    "reels-publisher",
+    "shorts-publisher",
+    "social-media-automation",
+    "ai-video-publisher",
+    "cloudflare-r2"
+  ],
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "mcp": "node src/mcp/server.js",
+    "setup": "node src/cli/setup.js",
+    "dashboard": "node src/cli/setup.js --dashboard",
+    "tunnel": "node src/cli/tunnel.js",
+    "install:skill": "node scripts/install-skill.js",
+    "test": "node --test tests/*.test.js",
+    "dashboard:install": "npm --prefix dashboard install",
+    "dashboard:build": "npm --prefix dashboard run build",
+    "dashboard:dev": "npm --prefix dashboard run dev"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "zod": "^3.24.2"
+  }
+}
